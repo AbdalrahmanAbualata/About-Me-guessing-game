@@ -6,6 +6,7 @@ alert(" hello (( "+ userName +" )) welcome to our Website ")
 document.write("<p style='color:#fff5fd'> *** good bye ( " +userName+ " )*** </p>");
 
 alert("ok (( " +  userName  +  " )) let us play a game , I will ask you a gussing questions about my self and you need to  answer  with (YES/NO).")
+let trueA=0;
 
 let question1 = prompt(" Is my name Abdalrahman ? ");
 
@@ -20,6 +21,7 @@ switch (question1.toUpperCase()) {
         case 'YES':
            alert('CORRECT');
            console.log('CORRECT');
+           trueA++;
             break;
         case 'NO':
            alert('WRONG  , MY NAME IS Abdalrahman');
@@ -44,6 +46,7 @@ switch (question2.toUpperCase()) {
         case 'NO':
            alert('CORRECT');
            console.log('CORRECT');
+           trueA++;
             break;
                     }                 
 // ********************************************************
@@ -64,6 +67,7 @@ switch (question3.toUpperCase()) {
         case 'NO':
            alert('CORRECT');
            console.log('CORRECT');
+           trueA++;
             break;
                     }     
 // ********************************************************                    
@@ -80,6 +84,7 @@ switch (question4.toUpperCase()) {
         case 'YES':
            alert('CORRECT');
            console.log('CORRECT');
+           trueA++;
             break;
         case 'NO':
            alert('WRONG  , yes i am from jordan ');
@@ -100,11 +105,69 @@ switch (question5.toUpperCase()) {
        case 'YES':
           alert('CORRECT');
           console.log('CORRECT');
+          trueA++;
            break;
        case 'NO':
           alert('WRONG ');
           console.log('WRONG');
            break;
                    }
-                   
-alert(" have a good day  (( "+ userName +" )) ")
+   // ******************************************************************
+
+let x=0;
+let y=0;
+let corecter = 'a'
+let num1=1;
+while(typeof num1 !== "Number" && x !== 4 ){
+   
+        num1 = Number ( prompt(" How much my home in (km) is far from LTUC college ? , You only have 4 chances ")); 
+   console.log(typeof num1);
+
+   corecter = num1.toString();
+
+    console.log(corecter);
+
+if(corecter == 0){
+   continue;
+}
+ if (num1<4 ) {
+
+    alert("too low");
+    x++; // +1 for x until x=4 
+  }
+  else if (num1>4){ 
+    alert("too hight");
+    x++;//+1 for x until x=4 
+}
+  else if (num1 == 4){alert("correct");
+  trueA++;
+    x=4; //let x = 4 to brake the loop
+    y=1;
+    
+}
+}
+
+if ( y !==1 ){alert("the corect answer is ( 4 KM )")}
+
+// *****************************************************
+let  myfavoritcolor = ['red' , 'blue' , 'yellow'];
+let x2=0;
+while( x2 !== 6){
+   let question7 = prompt("my favorite color is ?? ");
+
+     console.log(myfavoritcolor);
+     console.log(question7);
+   
+    if (question7.toLowerCase() === 'red'|| question7.toLowerCase() === 'blue' || question7.toLowerCase() === 'yellow' ) {
+   
+       alert("correct");
+       x2=6;
+       trueA++;
+     }
+     else { 
+       alert("wrong");
+       x2++;
+   }
+}
+       alert('myfavoritcolor is ('+myfavoritcolor+')');
+       alert('total number of correct answers = '+trueA+'/7');
