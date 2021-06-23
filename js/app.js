@@ -9,7 +9,7 @@ alert("ok (( " +  userName  +  " )) let us play a game , I will ask you a gussin
 let trueA=0;
 
 let question1 = prompt(" Is my name Abdalrahman ? ");
-
+function q1(){
  while ( question1.toUpperCase()   != "YES" && question1.toUpperCase()  != "NO") {
 
     question1 = prompt("Is my name Abdalrahman ? , answer with ( yes/no) plz  ");
@@ -112,12 +112,15 @@ switch (question5.toUpperCase()) {
           console.log('WRONG');
            break;
                    }
+                  }
+                  q1();
    // ******************************************************************
 
 let x=0;
 let y=0;
 let corecter = 'a'
 let num1=1;
+function q2(){
 while(typeof num1 !== "Number" && x !== 4 ){
    
         num1 = Number ( prompt(" How much my home in (km) is far from LTUC college ? , You only have 4 chances ")); 
@@ -148,10 +151,11 @@ if(corecter == 0){
 }
 
 if ( y !==1 ){alert("the corect answer is ( 4 KM )")}
-
+}
+q2();
 // *****************************************************
 let  myfavoritcolor = ['red' , 'blue' , 'yellow'];
-
+function q3(){
 for( let x2 = 1 ;x2 <=6;x2++){
    let q7 = prompt("my favorite color is ?? ").toLowerCase();
 
@@ -170,7 +174,8 @@ for( let x2 = 1 ;x2 <=6;x2++){
    if(q7 !== myfavoritcolor[i])
    alert("wrong");
 }
-   
+}
+q3();
 console
    alert('myfavoritcolor is ('+myfavoritcolor+')');
    alert('total number of correct answers = '+trueA+'/7');
