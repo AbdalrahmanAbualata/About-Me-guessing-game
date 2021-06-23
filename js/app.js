@@ -153,21 +153,23 @@ if ( y !==1 ){alert("the corect answer is ( 4 KM )")}
 let  myfavoritcolor = ['red' , 'blue' , 'yellow'];
 let x2=0;
 while( x2 !== 6){
-   let question7 = prompt("my favorite color is ?? ");
+   let q7 = prompt("my favorite color is ?? ").toLowerCase();
 
      console.log(myfavoritcolor);
-     console.log(question7);
-   
-    if (question7.toLowerCase() === 'red'|| question7.toLowerCase() === 'blue' || question7.toLowerCase() === 'yellow' ) {
+     console.log(q7);
+   for(let i =0; i< myfavoritcolor.length; i++){}
+    if (q7==myfavoritcolor[i] ) {
    
        alert("correct");
        x2=6;
        trueA++;
      }
+     
      else { 
        alert("wrong");
        x2++;
    }
+   x2++;
 }
        alert('myfavoritcolor is ('+myfavoritcolor+')');
        alert('total number of correct answers = '+trueA+'/7');
