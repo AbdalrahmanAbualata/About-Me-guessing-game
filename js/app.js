@@ -151,25 +151,26 @@ if ( y !==1 ){alert("the corect answer is ( 4 KM )")}
 
 // *****************************************************
 let  myfavoritcolor = ['red' , 'blue' , 'yellow'];
-let x2=0;
-while( x2 !== 6){
+
+for( let x2 = 1 ;x2 <=6;x2++){
    let q7 = prompt("my favorite color is ?? ").toLowerCase();
 
      console.log(myfavoritcolor);
      console.log(q7);
-   for(let i =0; i< myfavoritcolor.length; i++){}
-    if (q7==myfavoritcolor[i] ) {
+     let i=1;
+   for( i =0; i< myfavoritcolor.length; i++){
+    if (q7 == myfavoritcolor[i] ) {
    
        alert("correct");
-       x2=6;
+      x2=6;
        trueA++;
+       break;
      }
-     
-     else { 
-       alert("wrong");
-       x2++;
    }
-   x2++;
+   if(q7 !== myfavoritcolor[i])
+   alert("wrong");
 }
-       alert('myfavoritcolor is ('+myfavoritcolor+')');
-       alert('total number of correct answers = '+trueA+'/7');
+   
+console
+   alert('myfavoritcolor is ('+myfavoritcolor+')');
+   alert('total number of correct answers = '+trueA+'/7');
