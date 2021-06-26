@@ -31,14 +31,17 @@ body{clear: both;
         background: #fff;
         color: #6474a0;}
        #imgco{float: right;margin-right: 300px;padding-top: 50px;}
-       #img2 {border-radius: 63px; box-shadow: 5px 5px rgb(2, 44, 68);}
-#p1{margin-top: 50px; text-align: left;border: solid black ;border-radius: 63px;float:left;padding: 25px;color: black;background-image: linear-gradient( 
+       #img2 {border-radius: 63px; box-shadow: 5px 5px rgb(0, 0, 0);border: solid 5px rgb(0, 0, 0);}
+       #img3co{float: right;margin-right: 263px;padding-top: 50px;}
+       #img3{border-radius: 63px; box-shadow: 5px 5px rgb(1, 2, 2);border: solid 5px rgb(2, 3, 3);}
+
+#p1{margin: 50px; text-align: left;border: solid black ;border-radius: 63px;float:left;padding: 25px;color: black;background-image: linear-gradient( 
     79deg
      , #ffffff 0%, #48c7db); margin-right: 50px;}
 #article2{clear: both;}
 #list{margin-top: 20px; text-align: left;border: solid black ;border-radius: 63px;float:left;padding: 25px;color: black;background-image: linear-gradient( 
     79deg
-     , #ffffff 0%, #48c7db); margin-right: 50px;width: 350px;font-size:150;margin-bottom: 50px;}
+     , #ffffff 0%, #48c7db); margin: 50px;width: 350px;font-size:150;margin-bottom: 50px;}
 footer{background-image: linear-gradient( 
     79deg
      , #1c2f4a 0%, #4cd5de 74%);border: solid black;
